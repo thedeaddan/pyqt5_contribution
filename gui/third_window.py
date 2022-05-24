@@ -18,66 +18,56 @@ class Ui_MainWindow(object):
         MainWindow.resize(800, 600)
         MainWindow.setBaseSize(QtCore.QSize(800, 600))
         MainWindow.setAutoFillBackground(False)
-
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
-
         self.line = QtWidgets.QFrame(self.centralwidget)
         self.line.setGeometry(QtCore.QRect(40, 110, 701, 20))
         self.line.setStyleSheet("color:rgb(192, 249, 255)")
         self.line.setFrameShape(QtWidgets.QFrame.HLine)
         self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line.setObjectName("line")
-
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(50, 90, 71, 16))
         font = QtGui.QFont()
         font.setPointSize(11)
         self.label.setFont(font)
         self.label.setObjectName("label")
-
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(210, 90, 71, 16))
         font = QtGui.QFont()
         font.setPointSize(11)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
-
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
         self.label_3.setGeometry(QtCore.QRect(330, 90, 151, 16))
         font = QtGui.QFont()
         font.setPointSize(11)
         self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
-
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
         self.label_4.setGeometry(QtCore.QRect(550, 90, 61, 16))
         font = QtGui.QFont()
         font.setPointSize(11)
         self.label_4.setFont(font)
         self.label_4.setObjectName("label_4")
-
         self.line_2 = QtWidgets.QFrame(self.centralwidget)
         self.line_2.setGeometry(QtCore.QRect(40, 210, 701, 20))
         self.line_2.setStyleSheet("color:rgb(192, 249, 255)")
         self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_2.setObjectName("line_2")
-
         self.line_3 = QtWidgets.QFrame(self.centralwidget)
         self.line_3.setGeometry(QtCore.QRect(40, 320, 701, 20))
         self.line_3.setStyleSheet("color:rgb(192, 249, 255)")
         self.line_3.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_3.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_3.setObjectName("line_3")
-
         self.line_4 = QtWidgets.QFrame(self.centralwidget)
         self.line_4.setGeometry(QtCore.QRect(40, 440, 701, 20))
         self.line_4.setStyleSheet("color:rgb(192, 249, 255)")
         self.line_4.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_4.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_4.setObjectName("line_4")
-
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(280, 490, 221, 31))
         font = QtGui.QFont()
@@ -88,11 +78,10 @@ class Ui_MainWindow(object):
         self.pushButton.setFont(font)
         self.pushButton.setAutoFillBackground(False)
         self.pushButton.setStyleSheet("background: rgb(0,85,255);\n"
-                                      "color: rgb(255,255,255);\n"
-                                      "")
+"color: rgb(255,255,255);\n"
+"")
         self.pushButton.setCheckable(False)
         self.pushButton.setObjectName("pushButton")
-
         self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_4.setGeometry(QtCore.QRect(660, 157, 130, 28))
         font = QtGui.QFont()
@@ -103,32 +92,28 @@ class Ui_MainWindow(object):
         self.pushButton_4.setFont(font)
         self.pushButton_4.setAutoFillBackground(False)
         self.pushButton_4.setStyleSheet("background: rgb(0,85,255);\n"
-                                        "color: rgb(255,255,255);\n"
-                                        "")
+"color: rgb(255,255,255);\n"
+"")
         self.pushButton_4.setCheckable(False)
         self.pushButton_4.setObjectName("pushButton_4")
-
         self.label_5 = QtWidgets.QLabel(self.centralwidget)
         self.label_5.setGeometry(QtCore.QRect(50, 160, 91, 16))
         font = QtGui.QFont()
         font.setPointSize(11)
         self.label_5.setFont(font)
         self.label_5.setObjectName("label_5")
-
         self.label_6 = QtWidgets.QLabel(self.centralwidget)
         self.label_6.setGeometry(QtCore.QRect(50, 260, 101, 16))
         font = QtGui.QFont()
         font.setPointSize(11)
         self.label_6.setFont(font)
         self.label_6.setObjectName("label_6")
-
         self.label_7 = QtWidgets.QLabel(self.centralwidget)
         self.label_7.setGeometry(QtCore.QRect(50, 380, 101, 16))
         font = QtGui.QFont()
         font.setPointSize(11)
         self.label_7.setFont(font)
         self.label_7.setObjectName("label_7")
-
         self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_5.setGeometry(QtCore.QRect(660, 257, 130, 28))
         font = QtGui.QFont()
@@ -139,11 +124,10 @@ class Ui_MainWindow(object):
         self.pushButton_5.setFont(font)
         self.pushButton_5.setAutoFillBackground(False)
         self.pushButton_5.setStyleSheet("background: rgb(0,85,255);\n"
-                                        "color: rgb(255,255,255);\n"
-                                        "")
+"color: rgb(255,255,255);\n"
+"")
         self.pushButton_5.setCheckable(False)
         self.pushButton_5.setObjectName("pushButton_5")
-
         self.pushButton_6 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_6.setGeometry(QtCore.QRect(660, 377, 130, 28))
         font = QtGui.QFont()
@@ -154,62 +138,51 @@ class Ui_MainWindow(object):
         self.pushButton_6.setFont(font)
         self.pushButton_6.setAutoFillBackground(False)
         self.pushButton_6.setStyleSheet("background: rgb(0,85,255);\n"
-                                        "color: rgb(255,255,255);\n"
-                                        "")
+"color: rgb(255,255,255);\n"
+"")
         self.pushButton_6.setCheckable(False)
         self.pushButton_6.setObjectName("pushButton_6")
-
         self.lineEdit = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit.setGeometry(QtCore.QRect(180, 160, 113, 20))
         self.lineEdit.setFrame(False)
         self.lineEdit.setObjectName("lineEdit")
-
         self.lineEdit_2 = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_2.setGeometry(QtCore.QRect(180, 260, 113, 20))
         self.lineEdit_2.setFrame(False)
         self.lineEdit_2.setObjectName("lineEdit_2")
-
         self.lineEdit_3 = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_3.setGeometry(QtCore.QRect(180, 380, 113, 20))
         self.lineEdit_3.setAutoFillBackground(False)
         self.lineEdit_3.setStyleSheet("background: rgb(255,255,255)")
         self.lineEdit_3.setFrame(False)
         self.lineEdit_3.setObjectName("lineEdit_3")
-
         self.lineEdit_4 = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_4.setGeometry(QtCore.QRect(350, 160, 113, 20))
         self.lineEdit_4.setFrame(False)
         self.lineEdit_4.setObjectName("lineEdit_4")
-
         self.lineEdit_5 = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_5.setGeometry(QtCore.QRect(350, 260, 113, 20))
         self.lineEdit_5.setFrame(False)
         self.lineEdit_5.setObjectName("lineEdit_5")
-
         self.lineEdit_6 = QtWidgets.QLineEdit(self.centralwidget)
-        self.lineEdit_6.setGeometry(QtCore.QRect(360, 380, 113, 20))
+        self.lineEdit_6.setGeometry(QtCore.QRect(350, 380, 113, 20))
         self.lineEdit_6.setFrame(False)
         self.lineEdit_6.setObjectName("lineEdit_6")
-
         self.lineEdit_7 = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_7.setGeometry(QtCore.QRect(520, 160, 113, 20))
         self.lineEdit_7.setFrame(False)
         self.lineEdit_7.setObjectName("lineEdit_7")
-
         self.lineEdit_8 = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_8.setGeometry(QtCore.QRect(520, 260, 113, 20))
         self.lineEdit_8.setFrame(False)
         self.lineEdit_8.setObjectName("lineEdit_8")
-
         self.lineEdit_9 = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_9.setGeometry(QtCore.QRect(520, 380, 113, 20))
         self.lineEdit_9.setFrame(False)
         self.lineEdit_9.setObjectName("lineEdit_9")
-
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
-
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
