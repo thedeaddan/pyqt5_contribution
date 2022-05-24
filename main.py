@@ -34,10 +34,9 @@ class Third(QtWidgets.QMainWindow):
         self.ui.lineEdit_8.setText(str(percent_2)+"% Руб.")
         self.ui.lineEdit_9.setText(str(percent_3)+"% Руб.")
 
-
-
     def error(self):
         QMessageBox.critical(self, "Ой..", "Эта функция не работает!", QMessageBox.Ok)
+        
 class Second(QtWidgets.QMainWindow):
     def __init__(self):
         super(Second, self).__init__()
