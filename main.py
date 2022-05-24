@@ -109,9 +109,6 @@ class First(QtWidgets.QMainWindow):
         self.w2 = Second()
         self.w2.show()
 
-def close_w2():
-    w2 = Second()
-    w2.hide()
 app = QtWidgets.QApplication([])
 w1 = First()
 w1.show()
