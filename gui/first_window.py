@@ -18,32 +18,41 @@ class Ui_MainWindow(object):
         MainWindow.setUnifiedTitleAndToolBarOnMac(True)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
+
         self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
         self.textBrowser.setGeometry(QtCore.QRect(40, 140, 211, 192))
         self.textBrowser.setObjectName("textBrowser")
+
         self.textBrowser_2 = QtWidgets.QTextBrowser(self.centralwidget)
         self.textBrowser_2.setGeometry(QtCore.QRect(290, 140, 211, 192))
         self.textBrowser_2.setObjectName("textBrowser_2")
+
         self.textBrowser_3 = QtWidgets.QTextBrowser(self.centralwidget)
         self.textBrowser_3.setGeometry(QtCore.QRect(540, 140, 211, 192))
         self.textBrowser_3.setObjectName("textBrowser_3")
+
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(290, 370, 221, 41))
+
         font = QtGui.QFont()
         font.setFamily("MS Shell Dlg 2")
         font.setPointSize(10)
         font.setBold(True)
         font.setWeight(75)
+
         self.pushButton.setFont(font)
         self.pushButton.setAutoFillBackground(False)
         self.pushButton.setStyleSheet("background: rgb(0,85,255);\n"
-"color: rgb(255,255,255);\n"
-"")
+                                      "color: rgb(255,255,255);\n"
+                                      "")
         self.pushButton.setCheckable(True)
         self.pushButton.setObjectName("pushButton")
+
         MainWindow.setCentralWidget(self.centralwidget)
+
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
+
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
