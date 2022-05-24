@@ -1,5 +1,5 @@
 # pyqt5_contribution
-Проект на PyQt5 с расчётом вклада(Учёба)
+Проект на PyQt5 с расчётом вклада(Учёба)  
 `Дизайн без логики`  
 
 ![image](https://user-images.githubusercontent.com/40400854/169982580-09d47ef7-20f3-4adf-bec8-b5310c92cadb.png)  
