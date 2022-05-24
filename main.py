@@ -30,14 +30,9 @@ class Third(QtWidgets.QMainWindow):
         self.ui.lineEdit_5.setText(str(round(optimal+first_value,2))+" Руб.")
         self.ui.lineEdit_6.setText(str(round(standart+first_value,2))+" Руб.")
 
-        #percent_1 = round(((stable/first_value)*(365/second_value)*100),2)
-        # percent_1 = round(stable+first_value,2)-first_value/100
-        # percent_2 = round(((optimal/first_value)*(365/second_value)*100),2)
-        # percent_3 = round(((standart/first_value)*(365/second_value)*100),2)
-
-        # self.ui.lineEdit_7.setText(str(percent_1)+"% Руб.")
-        # self.ui.lineEdit_8.setText(str(percent_2)+"% Руб.")
-        # self.ui.lineEdit_9.setText(str(percent_3)+"% Руб.")
+        self.ui.lineEdit_7.setText("9,85 % Руб.")
+        self.ui.lineEdit_8.setText("6,1 % Руб.")
+        self.ui.lineEdit_9.setText("6,55 % Руб.")
 
     def error(self):
         QMessageBox.critical(self, "Ой..", "Эта функция не работает!", QMessageBox.Ok)
