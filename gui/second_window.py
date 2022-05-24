@@ -375,7 +375,7 @@ class Ui_MainWindow_2(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Калькулятор"))
         self.label.setText(_translate("MainWindow", "Рассчитать доход"))
         self.label_2.setText(_translate("MainWindow", "Сумма"))
         self.label_3.setText(_translate("MainWindow", "Срок"))
