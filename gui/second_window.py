@@ -80,7 +80,7 @@ class Ui_MainWindow(object):
         self.horizontalSlider.setObjectName("horizontalSlider")
         self.horizontalSlider_2 = QtWidgets.QSlider(self.centralwidget)
         self.horizontalSlider_2.setGeometry(QtCore.QRect(60, 300, 201, 22))
-        self.horizontalSlider_2.setMinimum(1)
+        self.horizontalSlider_2.setMinimum(31)
         self.horizontalSlider_2.setMaximum(1825)
         self.horizontalSlider_2.setSingleStep(1)
         self.horizontalSlider_2.setPageStep(1)
