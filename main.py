@@ -30,42 +30,59 @@ class Second(QtWidgets.QMainWindow):
         global first_value
         try:
             first_value = int(value)
+            self.change_output()
         except:
             self.ui.lineEdit.setText(value[:-1])
     def changeValueLine_2(self,value):
         global second_value
         try:
             second_value = int(value)
+            self.change_output()
         except:
             self.ui.lineEdit_2.setText(value[:-1])
     def changeValueLine_3(self,value):
         global third_value
         try:
             third_value = int(value)
+            self.change_output()
         except:
             self.ui.lineEdit_3.setText(value[:-1])
+
 
     def changeValue(self, value):
         global first_value
         self.ui.lineEdit.setText(str(value))
         first_value = value
+        self.change_output()
     def changeValue_2(self, value):
         global second_value
         self.ui.lineEdit_2.setText(str(value))
         second_value = value
+        self.change_output()
     def changeValue_3(self, value):
         global third_value
         self.ui.lineEdit_3.setText(str(value))
         third_value = value
-        if first_value != 0 and second_value != 0:
-            self.change_output()
+        self.change_output( )
 
     def change_output(self):
-
-        self.ui.lineEdit_4.setText(str(value))
-        self.ui.lineEdit_5.setText(str(value))
-        self.ui.lineEdit_6.setText(str(value))
-
+        if second_value < 91:
+            self.ui.lineEdit_4.setText("Слишком маленький срок")
+            self.ui.lineEdit_6.setText("Слишком маленький срок")
+            self.ui.lineEdit_5.setText("Слишком маленький срок")
+        elif second_value < 180:
+            stable = int(first_value+(first_value*0.0067*second_value/31)+(third_value*second_value/31))
+            standart = int(first_value+(first_value*0.005*second_value/31)+(third_value*second_value/31))
+            self.ui.lineEdit_4.setText(str(stable))
+            self.ui.lineEdit_5.setText("Слишком маленький срок")
+            self.ui.lineEdit_6.setText(str(standart))
+        else:
+            stable = int(first_value+(first_value*0.0067*second_value/31)+(third_value*second_value/31))
+            optimal = int(first_value+(first_value*0.0042*second_value/31)+(third_value*second_value/31))
+            standart = int(first_value+(first_value*0.005*second_value/31)+(third_value*second_value/31))
+            self.ui.lineEdit_4.setText(str(stable))
+            self.ui.lineEdit_5.setText(str(optimal))
+            self.ui.lineEdit_6.setText(str(standart))
 class First(QtWidgets.QMainWindow):
     def __init__(self):
         super(First, self).__init__()
