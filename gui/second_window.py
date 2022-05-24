@@ -231,6 +231,7 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.label_14.setFont(font)
         self.label_14.setObjectName("label_14")
+
         self.label_15 = QtWidgets.QLabel(self.centralwidget)
         self.label_15.setGeometry(QtCore.QRect(145, 180, 41, 31))
         font = QtGui.QFont()
@@ -239,6 +240,7 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.label_15.setFont(font)
         self.label_15.setObjectName("label_15")
+
         self.label_16 = QtWidgets.QLabel(self.centralwidget)
         self.label_16.setGeometry(QtCore.QRect(70, 180, 41, 31))
         font = QtGui.QFont()
@@ -247,21 +249,25 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.label_16.setFont(font)
         self.label_16.setObjectName("label_16")
+
         self.line_7 = QtWidgets.QFrame(self.centralwidget)
         self.line_7.setGeometry(QtCore.QRect(157, 172, 3, 19))
         self.line_7.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_7.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_7.setObjectName("line_7")
+
         self.line_8 = QtWidgets.QFrame(self.centralwidget)
         self.line_8.setGeometry(QtCore.QRect(260, 170, 3, 19))
         self.line_8.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_8.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_8.setObjectName("line_8")
+
         self.line_9 = QtWidgets.QFrame(self.centralwidget)
         self.line_9.setGeometry(QtCore.QRect(82, 170, 3, 19))
         self.line_9.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_9.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_9.setObjectName("line_9")
+
         self.label_17 = QtWidgets.QLabel(self.centralwidget)
         self.label_17.setGeometry(QtCore.QRect(30, 180, 41, 31))
         font = QtGui.QFont()
@@ -270,11 +276,13 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.label_17.setFont(font)
         self.label_17.setObjectName("label_17")
+
         self.line_10 = QtWidgets.QFrame(self.centralwidget)
         self.line_10.setGeometry(QtCore.QRect(60, 170, 3, 19))
         self.line_10.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_10.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_10.setObjectName("line_10")
+
         self.label_18 = QtWidgets.QLabel(self.centralwidget)
         self.label_18.setGeometry(QtCore.QRect(260, 180, 41, 31))
         font = QtGui.QFont()
@@ -283,14 +291,17 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.label_18.setFont(font)
         self.label_18.setObjectName("label_18")
+
         self.line_11 = QtWidgets.QFrame(self.centralwidget)
         self.line_11.setGeometry(QtCore.QRect(159, 430, 3, 19))
         self.line_11.setFrameShape(QtWidgets.QFrame.VLine)
         self.line_11.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_11.setObjectName("line_11")
+
         self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
         self.textBrowser.setGeometry(QtCore.QRect(490, 100, 281, 411))
         self.textBrowser.setObjectName("textBrowser")
+
         self.label_19 = QtWidgets.QLabel(self.centralwidget)
         self.label_19.setGeometry(QtCore.QRect(530, 110, 131, 41))
         font = QtGui.QFont()
@@ -299,12 +310,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.label_19.setFont(font)
         self.label_19.setObjectName("label_19")
+
         self.label_20 = QtWidgets.QLabel(self.centralwidget)
         self.label_20.setGeometry(QtCore.QRect(530, 150, 131, 16))
         font = QtGui.QFont()
         font.setPointSize(11)
         self.label_20.setFont(font)
         self.label_20.setObjectName("label_20")
+
         self.lineEdit_4 = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_4.setGeometry(QtCore.QRect(530, 180, 201, 27))
         self.lineEdit_4.setText("")
@@ -312,12 +325,14 @@ class Ui_MainWindow(object):
         self.lineEdit_4.setDragEnabled(False)
         self.lineEdit_4.setClearButtonEnabled(False)
         self.lineEdit_4.setObjectName("lineEdit_4")
+
         self.label_21 = QtWidgets.QLabel(self.centralwidget)
         self.label_21.setGeometry(QtCore.QRect(530, 250, 131, 16))
         font = QtGui.QFont()
         font.setPointSize(11)
         self.label_21.setFont(font)
         self.label_21.setObjectName("label_21")
+
         self.label_22 = QtWidgets.QLabel(self.centralwidget)
         self.label_22.setGeometry(QtCore.QRect(530, 210, 161, 41))
         font = QtGui.QFont()
@@ -326,12 +341,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.label_22.setFont(font)
         self.label_22.setObjectName("label_22")
+
         self.label_23 = QtWidgets.QLabel(self.centralwidget)
         self.label_23.setGeometry(QtCore.QRect(530, 360, 131, 16))
         font = QtGui.QFont()
         font.setPointSize(11)
         self.label_23.setFont(font)
         self.label_23.setObjectName("label_23")
+
         self.label_24 = QtWidgets.QLabel(self.centralwidget)
         self.label_24.setGeometry(QtCore.QRect(530, 320, 131, 41))
         font = QtGui.QFont()
@@ -340,6 +357,7 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.label_24.setFont(font)
         self.label_24.setObjectName("label_24")
+
         self.label_25 = QtWidgets.QLabel(self.centralwidget)
         self.label_25.setGeometry(QtCore.QRect(693, 182, 41, 21))
         font = QtGui.QFont()
@@ -348,6 +366,7 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.label_25.setFont(font)
         self.label_25.setObjectName("label_25")
+
         self.lineEdit_5 = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_5.setGeometry(QtCore.QRect(527, 280, 201, 27))
         self.lineEdit_5.setText("")
@@ -355,6 +374,7 @@ class Ui_MainWindow(object):
         self.lineEdit_5.setDragEnabled(False)
         self.lineEdit_5.setClearButtonEnabled(False)
         self.lineEdit_5.setObjectName("lineEdit_5")
+
         self.label_26 = QtWidgets.QLabel(self.centralwidget)
         self.label_26.setGeometry(QtCore.QRect(690, 282, 41, 21))
         font = QtGui.QFont()
@@ -363,6 +383,7 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.label_26.setFont(font)
         self.label_26.setObjectName("label_26")
+
         self.lineEdit_6 = QtWidgets.QLineEdit(self.centralwidget)
         self.lineEdit_6.setGeometry(QtCore.QRect(527, 388, 201, 27))
         self.lineEdit_6.setText("")
@@ -370,6 +391,7 @@ class Ui_MainWindow(object):
         self.lineEdit_6.setDragEnabled(False)
         self.lineEdit_6.setClearButtonEnabled(False)
         self.lineEdit_6.setObjectName("lineEdit_6")
+
         self.label_27 = QtWidgets.QLabel(self.centralwidget)
         self.label_27.setGeometry(QtCore.QRect(690, 390, 41, 21))
         font = QtGui.QFont()
@@ -378,6 +400,7 @@ class Ui_MainWindow(object):
         font.setWeight(50)
         self.label_27.setFont(font)
         self.label_27.setObjectName("label_27")
+
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setGeometry(QtCore.QRect(530, 440, 192, 31))
         font = QtGui.QFont()
@@ -387,12 +410,14 @@ class Ui_MainWindow(object):
         font.setWeight(75)
         self.pushButton.setFont(font)
         self.pushButton.setAutoFillBackground(False)
-        self.pushButton.setStyleSheet("background: rgb(0,85,255);\n"
-"color: rgb(255,255,255);\n"
-"")
+        self.pushButton.setStyleSheet("background: rgb(0,85,255);\n"""
+                                      "color: rgb(255,255,255);\n"
+                                      "")
         self.pushButton.setCheckable(True)
         self.pushButton.setObjectName("pushButton")
+
         MainWindow.setCentralWidget(self.centralwidget)
+
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
         MainWindow.setStatusBar(self.statusbar)
