@@ -12,11 +12,19 @@ class Third(QtWidgets.QMainWindow):
         super(Third, self).__init__()
         self.ui = third_window.Ui_MainWindow()
         self.ui.setupUi(self)
+        w2 = Second()
+        w2.hide()
+        self.ui.pushButton.clicked.connect(self.error)
+        self.ui.pushButton_4.clicked.connect(self.error)
+        self.ui.pushButton_5.clicked.connect(self.error)
+        self.ui.pushButton_6.clicked.connect(self.error)
 
+    def error(self):
+        print("error")
 class Second(QtWidgets.QMainWindow):
     def __init__(self):
         super(Second, self).__init__()
-        self.ui = second_window.Ui_MainWindow()
+        self.ui = second_window.Ui_MainWindow_2()
         self.ui.setupUi(self)
         self.ui.horizontalSlider.valueChanged[int].connect(self.changeValue)
         self.ui.horizontalSlider_2.valueChanged[int].connect(self.changeValue_2)
@@ -24,7 +32,11 @@ class Second(QtWidgets.QMainWindow):
         self.ui.lineEdit.textChanged.connect(self.changeValueLine)
         self.ui.lineEdit_2.textChanged.connect(self.changeValueLine_2)
         self.ui.lineEdit_3.textChanged.connect(self.changeValueLine_3)
-        self.ui.pushButton.clicked.connect(self.change_output)
+        self.ui.pushButton.clicked.connect(self.open_third)
+
+    def open_third(self):
+        self.w3 = Third()
+        self.w3.show()
 
     def changeValueLine(self,value):
         global first_value
@@ -71,18 +83,20 @@ class Second(QtWidgets.QMainWindow):
             self.ui.lineEdit_6.setText("Слишком маленький срок")
             self.ui.lineEdit_5.setText("Слишком маленький срок")
         elif second_value < 180:
-            stable = int(first_value+(first_value*0.0067*second_value/31)+(third_value*second_value/31))
-            standart = int(first_value+(first_value*0.005*second_value/31)+(third_value*second_value/31))
+            stable = (first_value*8*second_value/365)/100
+           standart = (first_value*6*second_value/365)/100
             self.ui.lineEdit_4.setText(str(stable))
             self.ui.lineEdit_5.setText("Слишком маленький срок")
             self.ui.lineEdit_6.setText(str(standart))
         else:
-            stable = int(first_value+(first_value*0.0067*second_value/31)+(third_value*second_value/31))
-            optimal = int(first_value+(first_value*0.0042*second_value/31)+(third_value*second_value/31))
-            standart = int(first_value+(first_value*0.005*second_value/31)+(third_value*second_value/31))
+            stable = (first_value*8*second_value/365)/100
+            optimal = (first_value*5*second_value/365)/100
+            standart = (first_value*6*second_value/365)/100
             self.ui.lineEdit_4.setText(str(stable))
             self.ui.lineEdit_5.setText(str(optimal))
             self.ui.lineEdit_6.setText(str(standart))
+
+
 class First(QtWidgets.QMainWindow):
     def __init__(self):
         super(First, self).__init__()
@@ -91,11 +105,13 @@ class First(QtWidgets.QMainWindow):
         self.ui.pushButton.clicked.connect(self.open_second)
 
     def open_second(self):
-        w1.setVisible(False)
+        w1.hide()
         self.w2 = Second()
         self.w2.show()
 
-
+def close_w2():
+    w2 = Second()
+    w2.hide()
 app = QtWidgets.QApplication([])
 w1 = First()
 w1.show()
