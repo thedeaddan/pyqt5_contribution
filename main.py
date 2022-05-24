@@ -1,5 +1,7 @@
 from PyQt5 import QtWidgets
 from gui import first_window,second_window,third_window
+from PyQt5.QtWidgets import QMessageBox, QLineEdit,QComboBox,QButtonGroup
+
 import sys
 
 global first_value,second_value, third_value
@@ -20,7 +22,7 @@ class Third(QtWidgets.QMainWindow):
         self.ui.pushButton_6.clicked.connect(self.error)
 
     def error(self):
-        print("error")
+        QMessageBox.critical(self, "Ой..", "Эта функция не работает!", QMessageBox.Ok)
 class Second(QtWidgets.QMainWindow):
     def __init__(self):
         super(Second, self).__init__()
@@ -83,15 +85,15 @@ class Second(QtWidgets.QMainWindow):
             self.ui.lineEdit_6.setText("Слишком маленький срок")
             self.ui.lineEdit_5.setText("Слишком маленький срок")
         elif second_value < 180:
-            stable = (first_value*8*second_value/365)/100
-           standart = (first_value*6*second_value/365)/100
+            stable = round(((first_value*8*second_value/365)/100)+(second_value/30.5)*third_value,2)
+            standart = round(((first_value*6*second_value/365)/100)+(second_value/30.5)*third_value,2)
             self.ui.lineEdit_4.setText(str(stable))
             self.ui.lineEdit_5.setText("Слишком маленький срок")
             self.ui.lineEdit_6.setText(str(standart))
         else:
-            stable = (first_value*8*second_value/365)/100
-            optimal = (first_value*5*second_value/365)/100
-            standart = (first_value*6*second_value/365)/100
+            stable = round(((first_value*8*second_value/365)/100)+(second_value/30.5)*third_value,2)
+            optimal = round(((first_value*5*second_value/365)/100)+(second_value/30.5)*third_value,2)
+            standart = round(((first_value*6*second_value/365)/100)+(second_value/30.5)*third_value,2)
             self.ui.lineEdit_4.setText(str(stable))
             self.ui.lineEdit_5.setText(str(optimal))
             self.ui.lineEdit_6.setText(str(standart))
